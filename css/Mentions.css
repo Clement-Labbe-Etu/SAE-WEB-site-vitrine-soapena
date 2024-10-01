@@ -1,0 +1,28 @@
+/*
+
+CSS RESERVE AU CONTENU DE LA PAGE CONTACTS
+
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+}
+
+article p{
+    margin-left: 90px ;
+    padding-left: 10px;
+    border-left: solid black 2px ;
+}
+
+article h3{
+    margin-left: 50px ;
+
+}

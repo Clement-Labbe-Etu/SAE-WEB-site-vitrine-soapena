@@ -1,0 +1,102 @@
+/*
+Style du contenu de la page Accueil
+*/
+
+/*
+#########################
+Style de la banderole avec TITRE
+########################"" 
+*/
+
+#Titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("/img/Fond-Savon-Accueil.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Titre h1{
+    margin: 0px;
+    background: -webkit-linear-gradient(70deg,rgb(223, 178, 195),rgb(255, 161, 197),rgb(255, 161, 197));
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+#########################
+Style de l'article
+########################"" 
+*/
+
+article{
+    background-color: rgb(142, 200, 128);
+    margin-block: 80px;
+    margin-inline: 50px;
+    padding: 20px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/*
+##################
+Media Quarys
+##################
+*/
+
+/*
+ screen width < 800px
+*/
+
+@media (min-width:0px){
+    #Titre h1{
+        font-size: 600%;
+        -webkit-text-stroke: rgb(207, 143, 168) 2px;
+    }
+
+    #Titre img{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+/*
+ screen width > 800px
+*/
+@media (min-width:800px){
+    #Titre h1{
+        font-size: 800%;
+    }
+
+    #Titre img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*
+ screen width > 1000px
+*/
+
+@media (min-width:1000px){
+    #Titre h1{
+        font-size: 1000%;
+        -webkit-text-stroke: rgb(207, 143, 168) 3px;
+    }
+
+    #Titre img{
+        width: auto;
+        height: auto;
+    }
+}

@@ -1,0 +1,126 @@
+/*
+CE STYLE EST RESERVE A LA PAGE BOUTIQUE
+*/
+
+
+
+/*
+Mise en Place des boite des savons
+*/
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-block: 50px;
+    background: url(/img/salle-de-bain-.webp);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    background-color: rgb(232, 232, 232);
+    border: solid rgb(180, 180, 180) ;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px;
+    box-shadow: 0px 0px 20px black;
+}
+
+article div h2{
+    text-align: center;
+    max-height: 32px;
+}
+
+
+
+article div img{
+    width: 200px;
+    height: 200px;
+}
+
+article *{
+    text-align: center;
+    transition: ease-in-out 0.2s;
+}
+article div p{
+    min-height: 150px ;
+}
+
+article div button{
+    justify-self: flex-end;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    background: grey;
+    transition: all ease-in-out 0.5s;
+}
+
+article div button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*
+Definition des couleurs en fonction du parfum
+*/
+
+/* ------------------ LAVANDE --------------- */
+
+article div#Lavande button:hover{
+    background: rgb(131, 62, 131);
+}
+
+/* ------------------ COCO --------------- */
+
+article div#Coco button:hover{
+    background: rgb(180, 180, 180);
+}
+
+/* ------------------ Miel --------------- */
+
+article div#Miel button:hover{
+    background: rgb(233, 163, 72);
+}
+
+/* ------------------ Cerise Noir --------------- */
+
+article div#Cerise_Noir button:hover{
+    background: rgb(139, 55, 55);
+}
+
+/* ------------------ Citron_vert --------------- */
+
+article div#Citron_vert button:hover{
+    background: rgb(65, 104, 47);
+}
+
+/* ------------------ Olive --------------- */
+
+article div#Olive button:hover{
+    background: rgb(170, 156, 128);
+}
+
+/* ------------------ Citron --------------- */
+
+article div#Citron button:hover{
+    background: rgb(161, 153, 73);
+}
+
+/* ------------------ Menthe --------------- */
+
+article div#Menthe button:hover{
+    background: rgb(48, 117, 79);
+}
